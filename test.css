@@ -1,5 +1,5 @@
 body{
-    background-color:yellowgreen;
+    background-color: gainsboro;
 }
 header{
     display:flex;
@@ -12,5 +12,9 @@ div{
     border: 2px solid black;
 }
 ul{
-    padding: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+a{
+    color: black;
 }

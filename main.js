@@ -15,7 +15,7 @@ var app = http.createServer(function(request,response){
                 fs.readdir('schedule',function(error,schlist){
                     _bloglist=template.listmaker(bloglist);
                     _schlist=template.listmaker(schlist);
-                    page=template.homepage(_bloglist,_schlist,style.css());
+                    page=template.homepage(_bloglist,_schlist,style.sheet());
 
                     response.writeHead(200);
                     response.end(page);
@@ -34,7 +34,7 @@ var app = http.createServer(function(request,response){
                         fs.readdir('schedule',function(error,schlist){
                             _bloglist=template.listmaker(bloglist);
                             _schlist=template.listmaker(schlist);
-                            page=template.subpage(_bloglist,_schlist,title,description,style.css());
+                            page=template.subpage(_bloglist,_schlist,title,description,style.sheet());
         
                             response.writeHead(200);
                             response.end(page);
@@ -50,7 +50,7 @@ var app = http.createServer(function(request,response){
                         fs.readdir('schedule',function(error,schlist){
                             _bloglist=template.listmaker(bloglist);
                             _schlist=template.listmaker(schlist);
-                            page=template.subpage(_bloglist,_schlist,title,description,style.css());
+                            page=template.subpage(_bloglist,_schlist,title,description,style.sheet());
         
                             response.writeHead(200);
                             response.end(page);
